@@ -81,7 +81,7 @@ public class ShooterSimpleAgent : Agent
         AddReward(-0.005f);
         if (_player.transform.localPosition.y < -0.5f)
         {
-            _player.DealDamage();
+            _player.DealDamage(Vector3.up);
             SetReward(-1f);
             EndEpisode();
             return;

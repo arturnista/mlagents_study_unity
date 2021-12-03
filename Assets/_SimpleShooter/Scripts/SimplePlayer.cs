@@ -7,6 +7,10 @@ public class SimplePlayer : MonoBehaviour
 
     public delegate void FireHandler(Vector3 direction);
     public event FireHandler OnFire;
+    public delegate void DamageHandler(Vector3 normal);
+    public event DamageHandler OnDamage;
+    public delegate void KillHandler();
+    public event KillHandler OnKill;
 
     [SerializeField] private float _moveSpeed = 5f;
     [SerializeField] private float _rotateSpeed = 25f;
@@ -73,7 +77,8 @@ public class SimplePlayer : MonoBehaviour
             SimplePlayer player;
             if (hit.collider.TryGetComponent<SimplePlayer>(out player))
             {
-                player.DealDamage();
+                OnKill?.Invoke();
+                player.DealDamage(hit.normal);
                 return true;
             }
         }
@@ -81,8 +86,9 @@ public class SimplePlayer : MonoBehaviour
         return false;
     }
 
-    public void DealDamage()
+    public void DealDamage(Vector3 normal)
     {
+        OnDamage?.Invoke(normal);
         IsDead = true;
     }
 
