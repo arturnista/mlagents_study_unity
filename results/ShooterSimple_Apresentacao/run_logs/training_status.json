@@ -1,0 +1,39 @@
+{
+    "ShooterSimple": {
+        "checkpoints": [
+            {
+                "steps": 499963,
+                "file_path": "results\\ShooterSimple\\ShooterSimple\\ShooterSimple-499963.onnx",
+                "reward": null,
+                "creation_time": 1638488210.3977585,
+                "auxillary_file_paths": [
+                    "results\\ShooterSimple\\ShooterSimple\\ShooterSimple-499963.pt"
+                ]
+            },
+            {
+                "steps": 500923,
+                "file_path": "results\\ShooterSimple\\ShooterSimple\\ShooterSimple-500923.onnx",
+                "reward": null,
+                "creation_time": 1638488212.9479241,
+                "auxillary_file_paths": [
+                    "results\\ShooterSimple\\ShooterSimple\\ShooterSimple-500923.pt"
+                ]
+            }
+        ],
+        "elo": 1322.33585506961,
+        "final_checkpoint": {
+            "steps": 500923,
+            "file_path": "results\\ShooterSimple\\ShooterSimple.onnx",
+            "reward": null,
+            "creation_time": 1638488212.9479241,
+            "auxillary_file_paths": [
+                "results\\ShooterSimple\\ShooterSimple\\ShooterSimple-500923.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

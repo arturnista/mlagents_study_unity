@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1638478030",
+        "python_version": "3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 23:09:28) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\ANISTA\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\mlagents-learn config/shooter_config.yaml --run-id=Shooter --force",
+        "mlagents_version": "0.27.0",
+        "mlagents_envs_version": "0.27.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cu110",
+        "numpy_version": "1.21.4",
+        "end_time_seconds": "1638478037"
+    },
+    "total": 7.6704077,
+    "count": 1,
+    "self": 0.0056040000000008305,
+    "children": {
+        "run_training.setup": {
+            "total": 0.19017590000000006,
+            "count": 1,
+            "self": 0.19017590000000006
+        },
+        "TrainerController.start_learning": {
+            "total": 7.4746277999999995,
+            "count": 1,
+            "self": 0.0002890999999989319,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 7.4743291,
+                    "count": 1,
+                    "self": 7.4743291
+                },
+                "trainer_threads": {
+                    "total": 1.1000000004202093e-06,
+                    "count": 1,
+                    "self": 1.1000000004202093e-06
+                },
+                "TrainerController._save_models": {
+                    "total": 8.499999999855845e-06,
+                    "count": 1,
+                    "self": 8.499999999855845e-06
+                }
+            }
+        }
+    }
+}

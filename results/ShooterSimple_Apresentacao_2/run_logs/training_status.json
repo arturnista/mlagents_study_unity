@@ -1,0 +1,48 @@
+{
+    "ShooterSimple": {
+        "checkpoints": [
+            {
+                "steps": 499990,
+                "file_path": "results\\ShooterSimple\\ShooterSimple\\ShooterSimple-499990.onnx",
+                "reward": 1.4983899195988972,
+                "creation_time": 1638492608.6314757,
+                "auxillary_file_paths": [
+                    "results\\ShooterSimple\\ShooterSimple\\ShooterSimple-499990.pt"
+                ]
+            },
+            {
+                "steps": 999998,
+                "file_path": "results\\ShooterSimple\\ShooterSimple\\ShooterSimple-999998.onnx",
+                "reward": 0.5833869700630506,
+                "creation_time": 1638495027.4370646,
+                "auxillary_file_paths": [
+                    "results\\ShooterSimple\\ShooterSimple\\ShooterSimple-999998.pt"
+                ]
+            },
+            {
+                "steps": 1000004,
+                "file_path": "results\\ShooterSimple\\ShooterSimple\\ShooterSimple-1000004.onnx",
+                "reward": 0.3393316886254719,
+                "creation_time": 1638495027.5210683,
+                "auxillary_file_paths": [
+                    "results\\ShooterSimple\\ShooterSimple\\ShooterSimple-1000004.pt"
+                ]
+            }
+        ],
+        "elo": 1425.9085692720391,
+        "final_checkpoint": {
+            "steps": 1000004,
+            "file_path": "results\\ShooterSimple\\ShooterSimple.onnx",
+            "reward": 0.3393316886254719,
+            "creation_time": 1638495027.5210683,
+            "auxillary_file_paths": [
+                "results\\ShooterSimple\\ShooterSimple\\ShooterSimple-1000004.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
